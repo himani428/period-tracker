@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Insights</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Cycle Insights</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Average Cycle Length: 28 days</p>
+      <p>Average Period Duration: 5 days</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Symptom Patterns</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Example Chart or Graph -->
+      <canvas baseChart
+      [data]="doughnutChartData"
+      [labels]="doughnutChartLabels"> 
+      </canvas>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

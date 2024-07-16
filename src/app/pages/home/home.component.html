@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Current Cycle</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Days until next period: {{daysUntilNextPeriod}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="full" routerLink="/log-period">Log New Period</ion-button>
+  <ion-button expand="full" routerLink="/calendar">View Calendar</ion-button>
+  <ion-button expand="full" routerLink="/insights">View Insights</ion-button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/settings">Settings</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

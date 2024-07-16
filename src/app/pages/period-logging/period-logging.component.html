@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Log Period</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Start Date</ion-label>
+      <ion-datetime display-format="MM/DD/YYYY" [(ngModel)]="period.startDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">End Date</ion-label>
+      <ion-datetime display-format="MM/DD/YYYY" [(ngModel)]="period.endDate"></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="finish()">Finish</ion-button>
+</ion-content>
